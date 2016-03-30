@@ -2,22 +2,30 @@
 layout: default
 ---
 
-<div class="home">
+{% for post in site.posts %}
+  <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+      <a href="/no-mans-sky-part-1"><img class="article-image" src=" images/no-mans-sky.jpg" border="0" alt=""></a>
+    </div>
+    <div class="mdl-cell mdl-cell--8-col">
+      <a class="title-text-link" href="/no-mans-sky-part-1">
+        <h2 class="mdl-card__title-text">No Man's Sky Series Part 1</h2>
+      </a>
+      <div class="mdl-card__supporting-text padding-top">
+        <span>Posted 2 days ago</span>
+        <div id="tt1" class=" icon material-icons fraeon-share-btn">share</div>
+        <div class="mdl-tooltip" for="tt1">
+          Share via social media
+        </div>
+      </div>
+      <div class="mdl-card__supporting-text no-left-padding">
+        <p> No Man's Sky is finally releasing and I can't wait to start exploring the universe 
+        that the team at Hello Games have set in motion. This series will take a look at the 
+        game and everything we know about it. </p>
+        <span>Category: <a href="#">No Man's Sky</a></span>
+      </div>
+    </div>
+  </div>
+{% endfor %}
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
