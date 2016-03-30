@@ -4,17 +4,19 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="fraeon-site mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {% include header.html %}
+  
+      <main class="mdl-layout__content">
+        <!-- Your content goes here -->
+        <div class="mdl-grid fraeon-max-width">
+          {{ content }}
+        </div>
+  
+        {% include footer.html %}
+      </main>
     </div>
-
-    {% include footer.html %}
-
   </body>
 
 </html>
