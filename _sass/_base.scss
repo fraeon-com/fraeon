@@ -1,3 +1,207 @@
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+footer, .mdl-mini-footer {
+    background-color: rgb(243, 243, 243);
+}
+
+.mdl-layout__content {
+    padding-top: 20px;
+}
+
+.headerlogo {
+    height: 45px;
+}
+
+.header-main-link {
+    font-weight: 500;
+    color: #fff !important;
+    opacity: 1;
+}
+
+.dropdown-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+}
+
+.mdl-layout__header, .mdl-layout__drawer-button {
+    color: white !important;
+}
+
+.title-text-link {
+    color: rgba(0, 0, 0, .87);
+    text-decoration: none;
+}
+
+.image-text-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#tt1 {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.info-card > button {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  -webkit-transform: translate(0px, -28px);
+          transform: translate(0px, -28px);
+}
+.info-card .mdl-card__media {
+  font-size: 13px;
+  font-weight: 500;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  padding: 24px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.info-card .mdl-card__media img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+.info-card .mdl-card__supporting-text {
+  background-color: #F5F5F5;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.info-card {
+    overflow: visible;
+    z-index: 10;
+}
+
+.meta {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    min-height: 64px;
+    width: 100%;
+}
+
+.meta.meta--fill {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mdl-mini-footer .mdl-logo {
+    color: rgb(158, 158, 158);
+}
+
+.social-btn {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin: 0 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.46;
+  border-radius: 2px;
+}
+
+.social-btn__gplus {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+}
+
+.social-btn__youtube {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_youtube_black_24dp.png');
+}
+
+.social-btn__share {
+  color: rgba(66, 66, 66);
+  background: transparent;
+}
+
+/* Keep All Code Below This Line */
+.fraeon-card .mdl-card__title {
+  padding-bottom: 0;
+}
+
+.fraeon-blog-card-full-bg {
+  background: url(/images/example-blog03.jpg) center / cover;
+}
+
+.fraeon-blog-card-event-bg {
+  background: url(/images/example-blog05.jpg) center / cover;
+}
+
+.fraeon-blog-card-strip-bg {
+  background: url(/images/example-blog06.jpg) center / cover;
+  min-height: 182px;
+}
+
+.fraeon-blog-card-compact .mdl-card__title {
+  padding-bottom: 0;
+}
+
+.fraeon-blog-card-bg > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+img.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.fraeon-max-width {
+  max-width: 900px;
+  margin: auto;
+}
+
+.fraeon-copy {
+  max-width: 700px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-left-padding{
+  padding-left: 0;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.padding-top {
+  padding: 10px 0 0;
+}
+
+.fraeon-share-btn {
+  position: relative;
+  float: right;
+  top: -4px;
+}
+
+.demo-card-event > .mdl-card__actions {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
 /**
  * Reset some basic elements
  */
